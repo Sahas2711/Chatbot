@@ -11,31 +11,30 @@ st.title("🤖 LangGraph Chatbot")
 # Apply combined custom CSS for both UI improvements and darkening the text
 st.markdown("""
     <style>
-    #Main,header,footer {visibility:hidden;};
+    #Main,header,footer {visibility:hidden;}
+
     /* General background color for the app */
     .stApp {
-        background-color: #aca3d6;
+        background-color: #aef5ea;  /* Darker background for visibility */
         padding: 1rem;
     }
 
     /* Text and font size improvements */
     html, body, [class*="css"] {
         font-size: 18px !important;
-        color: #111 !important;  /* Dark black text */
+        color: #ffffff !important;  /* White text for contrast */
     }
-
-    /* Header, Footer, and Menu hidden */
 
     /* User and Bot message styling */
     .user-msg {
-        #background-color: #daf0ff;
+        background-color: #daf0ff;  /* Light blue background for user messages */
         border-radius: 10px;
         padding: 10px;
         margin: 5px 0;
         text-align: left;
     }
     .bot-msg {
-        # background-color: #e4ffe0;
+        background-color: #e4ffe0;  /* Light green background for bot messages */
         border-radius: 10px;
         padding: 10px;
         margin: 5px 0;
@@ -81,8 +80,6 @@ graph.add_node('chatbot', chatbot)
 graph.add_edge(START, 'chatbot')
 graph.add_edge('chatbot', END)
 my_chatbot = graph.compile()
-
-
 
 # Initialize session state
 if "chat_history" not in st.session_state:
