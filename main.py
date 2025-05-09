@@ -11,6 +11,7 @@ st.title("🤖 LangGraph Chatbot")
 # Apply combined custom CSS for both UI improvements and darkening the text
 st.markdown("""
     <style>
+    #Main,header,footer {visibility:hidden;};
     /* General background color for the app */
     .stApp {
         background-color: #aca3d6;
