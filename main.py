@@ -13,7 +13,7 @@ st.markdown("""
     <style>
     /* General background color for the app */
     .stApp {
-        background-color: #1f1f06;
+        background-color: #aca3d6;
         padding: 1rem;
     }
 
@@ -24,7 +24,6 @@ st.markdown("""
     }
 
     /* Header, Footer, and Menu hidden */
-    #MainMenu, footer, header {visibility: hidden;}
 
     /* User and Bot message styling */
     .user-msg {
