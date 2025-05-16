@@ -15,7 +15,7 @@ st.markdown("""
 
     /* General background color for the app */
     .stApp {
-        background-color: #2e78f0;  /* Darker background for visibility */
+        background-color:#edf7f7
         padding: 1rem;
     }
 
